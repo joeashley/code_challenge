@@ -1,0 +1,7 @@
+virtualenv
+flask
+flask-wtf
+flask-bootstrap4
+requests
+phonenumbers
+email_validator
