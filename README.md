@@ -18,5 +18,13 @@ Start the processes by running
 bin\python3 api.py
 bin\python3 form.py
 ```
+![image](https://user-images.githubusercontent.com/31110789/133693792-d355d3ce-0b89-4fdf-aecd-ca4b6d7f53a6.png)
+<br><br>
 Then navigate to http://127.0.0.1:5000 to view the application
-
+<br>
+![image](https://user-images.githubusercontent.com/31110789/133693256-ed746763-b3a3-4e44-afcb-6abee70622e5.png)
+<br><br>
+On successful submission, the console will look like so:
+<br>
+![image](https://user-images.githubusercontent.com/31110789/133693674-63ab49b1-f08a-4217-abc5-84883d073dfc.png)
+<br>
