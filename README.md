@@ -39,13 +39,19 @@ Run the files as shown below. You will probably want to run them each in differe
 (test_env)$ python3 form.py
 ```
 <br>
+
 ![image](https://user-images.githubusercontent.com/31110789/133693792-d355d3ce-0b89-4fdf-aecd-ca4b6d7f53a6.png)
-<br><br>
+
+<br>
 Then navigate to http://127.0.0.1:5000 to view the application
 <br><br>
+
 ![image](https://user-images.githubusercontent.com/31110789/133693256-ed746763-b3a3-4e44-afcb-6abee70622e5.png)
-<br><br>
+
+<br>
 On successful submission, the console will look like so:
 <br><br>
+
 ![image](https://user-images.githubusercontent.com/31110789/133693674-63ab49b1-f08a-4217-abc5-84883d073dfc.png)
+
 <br>
