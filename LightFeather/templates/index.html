@@ -1,0 +1,62 @@
+
+
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+
+{% block content %}
+<div class="container">
+    <h1 class="pt-5 pb-2">Notification Form</h1>
+    <hr>
+        <form method="post" class="form" role="form">
+            {{ form.csrf_token() }}
+            <div class="row">
+                <div class="form-group col-md-6">
+                    {{ wtf.form_field(form.firstName, class='form-control', placeholder='First Name') }}
+                </div>
+                <div class="form-group col-md-6">
+                    {{ wtf.form_field(form.lastName, class='form-control', placeholder='Last Name') }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    {{ wtf.form_field(form.email, class='form-control') }}
+                </div>
+                <div class="form-group col-md-6">
+                    {{ wtf.form_field(form.phone, class='form-control') }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    {{ wtf.form_field(form.supervisor, class='form-control', placeholder='Supervisor') }}
+                </div>
+                <div class="form-group col-md-6">
+                    {{ wtf.form_field(form.contactMethod, class='form-control', placeholder='Choose one') }}
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    <hr>
+    </div>
+{% endblock %}
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+
+{% for message in messages %}
+{% if "Error" not in message[1]: %}
+    <div class="alert alert-info">
+    <strong>Success! </strong> {{ message[1] }}
+    </div>
+{% endif %}
+
+{% if "Error" in message[1]: %}
+    <div class="alert alert-danger">
+    <strong>Error: </strong> {{ message[1] }}
+    </div>
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endwith %}
+

@@ -1,0 +1,10 @@
+
+# bin/python3 -m pip install $package
+
+
+virtualenv
+flask
+flask-wtf
+flask-bootstrap4
+phonenumbers
+email_validator
