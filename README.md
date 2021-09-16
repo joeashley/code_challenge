@@ -3,12 +3,12 @@ Author: Joseph Ashley <br>
 Date: 2021-09-16 
 
 ## Prerequisites
-Before we begin, we should first check that python 3 is installed.
+Before beginning, first check that python 3 is installed.
 ```
 $ python3 -V
 Python 3.8.10
 ```
-Likewise we should check to see if the python package virtualenv is already present. If not, install it like so.
+Likewise we should check to see if the python package virtualenv is installed. If not, install it like so.
 ```
 $ pip freeze | grep "virtualenv"
 virtualenv==20.7.2
