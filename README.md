@@ -3,34 +3,32 @@ Author: Joseph Ashley <br>
 Date: 2021-09-16 
 
 ## Prerequisites
-Verify python is installed
+Before we begin, we should first check that python 3 is installed.
 ```
 $ python3 -V
 Python 3.8.10
 ```
-Check if virtualenv is already installed
+Likewise we should check to see if the python package virtualenv is already present. If not, install it like so.
 ```
 $ pip freeze | grep "virtualenv"
 virtualenv==20.7.2
-```
-If not, install it
-```
+# Otherwise...
 $ pip install virtualenv
 ```
 
 ## Installation
-Start off by creating a new virtual enviroment 'test_env' (or whatever).
+Start off by creating a new virtual environment, here I am calling it 'test_env'.
 ```
 $ python3 -m venv test_env
 $ cd test_env && source bin/activate
 (test_env)$ 
 ```
-Clone the repository and move the files into our working directory
+Once in the virtual environment, clone this repository and move the source files into our working directory
 ```
 (test_env)$ git clone https://github.com/joeashley/code_challenges.git
 (test_env)$ mv code_challenges/* .
 ```
-Install dependencies
+And lastly, install any unmet dependencies by running:
 ```
 (test_env)$ pip install -r requirements.txt
 ```
