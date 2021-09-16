@@ -3,15 +3,6 @@ Author: Joseph Ashley <br>
 Email: <joseph.ashley@protonmail.com> <br>
 Date: 2021-09-16 
 
-
-## Description
-
-
-
-## Table of Contents
-
-
-
 ## Installation
 ```
 python3 -m venv test_env
@@ -23,3 +14,10 @@ mv code_challenges/* .
 <br>Tested with Python 3.8.10 on Ubuntu 20.04.3 LTS
 
 ## Usage
+Start the processes by running
+```
+bin\python3 api.py
+bin\python3 form.py
+```
+Then navigate to http://127.0.0.1:5000 to view the application
+
