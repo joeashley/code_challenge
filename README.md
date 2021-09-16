@@ -1,6 +1,7 @@
 # LightFeather.io Coding Challenge 
-Author: Joseph Ashley <joseph.ashley@protonmail.com> <br>
-Date: 2021-09-16
+Author: Joseph Ashley <br>
+Email: <joseph.ashley@protonmail.com> <br>
+Date: 2021-09-16 
 
 
 ## Description
