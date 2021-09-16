@@ -2,21 +2,43 @@
 Author: Joseph Ashley <br>
 Date: 2021-09-16 
 
-## Installation
+## Prerequisites
+Verify python is installed
 ```
-python3 -m venv test_env
-cd test_env && source bin/activate
-bin/python3 -m pip install flask flask-wtf flask-bootstrap4 requests phonenumbers email_validator
-git clone https://github.com/joeashley/code_challenges.git
-mv code_challenges/* .
+$ python3 -V
+Python 3.8.10
 ```
-<br>Tested with Python 3.8.10 on Ubuntu 20.04.3 LTS
+Check if virtualenv is already installed
+```
+$ pip freeze | grep "virtualenv"
+virtualenv==20.7.2
+```
+If not, install it
+```
+$ pip install virtualenv
+```
 
-## Usage
-Start the processes by running
+## Installation
+Start off by creating a new virtual enviroment 'test_env' (or whatever).
 ```
-bin\python3 api.py
-bin\python3 form.py
+$ python3 -m venv test_env
+$ cd test_env && source bin/activate
+(test_env)$ 
+```
+Clone the repository and move the files into our working directory
+```
+(test_env)$ git clone https://github.com/joeashley/code_challenges.git
+(test_env)$ mv code_challenges/* .
+```
+Install dependencies
+```
+(test_env)$ pip install -r requirements.txt
+```
+## Usage
+Run the files as shown below. You will probably want to run them each in different windows in order to catch the output from both sides of the application.
+```
+(test_env)$ python3 api.py
+(test_env)$ python3 form.py
 ```
 ![image](https://user-images.githubusercontent.com/31110789/133693792-d355d3ce-0b89-4fdf-aecd-ca4b6d7f53a6.png)
 <br><br>
