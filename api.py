@@ -1,5 +1,4 @@
 from flask import Flask, jsonify, request
-from prettytable import PrettyTable
 import json, requests
 
 ###### api.py
