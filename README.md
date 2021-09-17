@@ -25,8 +25,8 @@ $ cd test_env && source bin/activate
 ```
 Once in the virtual environment, clone this repository and move the source files into our working directory
 ```
-(test_env)$ git clone https://github.com/joeashley/code_challenges.git
-(test_env)$ mv code_challenges/* .
+(test_env)$ git clone https://github.com/joeashley/code_challenge.git
+(test_env)$ mv code_challenge/* .
 ```
 And lastly, install any unmet dependencies by running:
 ```
