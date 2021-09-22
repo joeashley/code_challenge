@@ -46,6 +46,7 @@ def index():
         phone = form.phone.data
         email = form.email.data
         supervisor = form.supervisor.data
+        number = ""
 
         ## Validations
         is_valid = True # Initial condition
