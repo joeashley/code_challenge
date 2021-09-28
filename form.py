@@ -59,7 +59,7 @@ def index():
         # Phone number
         if phone == '' or phone == None:
             if contactMethod == "Phone":
-                is_valid == False
+                is_valid = False
                 print("\n    Please enter a valid phone number. \n")
         else:
             z = phonenumbers.parse(phone,"US")
